@@ -33,17 +33,17 @@
   bot.on("ready", async () => {
 
     console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-    bot.user.setActivity(`!Helpme | A CUSTOM BOT FOR FRIENDZONE`, {type: "PLAYING"});
+    bot.user.setActivity(`At ${bot.guilds.size} Servers!`, {type: "PLAYING"});
 
   });
 
   
     bot.on("guildCreate", guild => {
-    bot.user.setActivity(`!Helpme | A CUSTOM BOT FOR FRIENDZONE`, {type: "PLAYING"});
+    bot.user.setActivity(`At ${bot.guilds.size} Servers!`, {type: "PLAYING"});
     });
     //${prefix}
     bot.on("guildDelete", guild => {
-    bot.user.setActivity(`!Helpme | A CUSTOM BOT FOR FRIENDZONE`, {type: "PLAYING"});
+    bot.user.setActivity(`At ${bot.guilds.size} Servers!`, {type: "PLAYING"});
     });
 
 
@@ -51,10 +51,7 @@
 
   bot.on("message", async message => {
 
-   /*
-    if(message.author.id === bot.user.id) return;
-    else if(message.author.bot) return message.reply("砖转讜拽 讬讗驻住");  
-  */
+
 let prefix = botconfig.prefix
 
     if(message.content === `<@${bot.user.id}>`) return message.reply(`My prefix is ${prefix} . and if you need help type ${prefix}Helpme`)
@@ -82,18 +79,7 @@ let prefix = botconfig.prefix
   
   
 
-  /*
-      if(message.content === `${bot.user.id}`){
 
-
-          return message.reply("诇诪讛 诪讬 讗转讛 砖转转讬讬讙 讗讜转讬 讘讻诇诇")
-
-      };
-
-
-  */
-
-if(message.content == `${prefix}`+`ser`) return message.reply(`${bot.guilds.size} server. if someone will add me to new server i'll the you (owner)`)
     
 
 
@@ -108,15 +94,7 @@ if(message.content == `${prefix}`+`ser`) return message.reply(`${bot.guilds.size
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
-    /*if(message.content.startsWith(`write`)) {
-      if(!msg[message.author.id]) msg[message.author.id] = {};
-      if(!msg[message.author.id].message) msg[message.author.id].message = "";
-      msg[message.author.id].message = args; 
-      fs.writeFile("./msgs.json", JSON.stringify(msg), (err) => {
-        if(err) console.err(err);
-      });
-    message.reply("I'm done");
-    }*/ 
+
 
 
     // try now pls But the bot isnt runing.... stiil write test

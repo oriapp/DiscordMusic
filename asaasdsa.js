@@ -19,9 +19,9 @@ client.on('message', message => {
         color : " #e90a0a"
     }) 
     message.guild.createRole({
-        name : "Co_Owner",
+        name : "CO",
         permissions :   [326630611],
-        color : " #f3ae10"
+        color : " #f6ae10"
     })
     message.guild.createRole({
      name : "Manager",
@@ -51,7 +51,7 @@ client.on('message', message => {
     })
  
     message.guild.createRole({
-     name : "Devs",
+     name : "DV",
      permissions :   [58195137],
      color : " #1385ee"
     })
@@ -100,7 +100,7 @@ client.on('message', message => {
         color : " #000000"
     }) 
     message.guild.createRole({
-        name : "Made By: Discord.js",
+        name : "Made By: R C N",
         permissions :   [1],
         color : " #000000"
     }) 
